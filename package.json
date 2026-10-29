@@ -4,10 +4,11 @@
   "private": true,
   "scripts": {
     "dev": "next dev -H 0.0.0.0 -p 3000",
-    "prebuild": "node scripts/fetch-assets.mjs && node scripts/migrate-supabase.mjs",
     "build": "next build",
     "start": "next start -H 0.0.0.0 -p 3000",
-    "lint": "next lint"
+    "lint": "next lint",
+    "fetch-assets": "node scripts/fetch-assets.mjs",
+    "migrate-db": "node scripts/migrate-supabase.mjs"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.109.0",

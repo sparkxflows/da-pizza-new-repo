@@ -255,12 +255,12 @@ export function Hero() {
 
             <Link
               href="/menu"
-              className="group relative inline-flex items-center gap-2.5 px-8 py-4 rounded-full text-white font-bold bg-gradient-to-r from-[#D91F26] to-[#FF6B00] hover:from-[#e52830] hover:to-[#ff7b1a] shadow-[0_10px_30px_rgba(217,31,38,0.4)] hover:scale-[1.05] active:scale-95 transition-all duration-200 overflow-hidden"
+              className="group relative inline-flex items-center gap-2.5 px-8 py-4 rounded-full text-white/90 hover:text-white font-semibold bg-white/[0.06] hover:bg-white/[0.14] backdrop-blur-md border border-white/25 hover:border-white/50 shadow-[0_4px_20px_rgba(0,0,0,0.3)] hover:scale-[1.04] active:scale-95 transition-all duration-200 overflow-hidden"
             >
-              <span className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-700 ease-out bg-gradient-to-r from-transparent via-white/20 to-transparent" />
-              <span className="relative">Explore Menu</span>
+              <span className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-700 ease-out bg-gradient-to-r from-transparent via-white/10 to-transparent" />
+              <span className="relative tracking-wide">Explore Menu</span>
               <motion.span
-                className="relative flex items-center justify-center"
+                className="relative flex items-center justify-center text-white/70 group-hover:text-white transition-colors duration-200"
                 whileHover={{ x: 3 }}
               >
                 <ArrowRight size={17} />
